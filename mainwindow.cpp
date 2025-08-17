@@ -70,39 +70,17 @@ void MainWindow::calculateMotor () {
     ui->le_motor_M->setText(QString::number(motor_torque_));
 }
 
-void MainWindow::on_le_diametr_p_textChanged(const QString &arg1)
+double MainWindow::getProductivity () {
+    return productivity_;
+};
+double MainWindow::getPressure () {
+    return pressure_;
+};
+
+
+void MainWindow::on_pb_cylinder_calc_clicked()
 {
-    diametr_p_ = (ui->le_diametr_p->text()).toDouble();
-    calculateCylinder ();
+    emit showCylinderCalc();
+    this->hide();
 }
 
-
-void MainWindow::on_le_length_textChanged(const QString &arg1)
-{
-    length_ = (ui->le_length->text()).toDouble();
-    calculateCylinder ();
-}
-
-
-void MainWindow::on_le_diametr_s_textChanged(const QString &arg1)
-{
-    diametr_s_ = (ui->le_diametr_s->text()).toDouble();
-    calculateCylinder ();
-}
-
-void MainWindow::calculateCylinder () {
-    vol_p_ = (diametr_p_ * diametr_p_ * M_PI * length_ / 4) / 1000000;
-    ui->le_vol_p->setText(QString::number(vol_p_));
-
-    vol_s_ = ((diametr_p_ * diametr_p_ * M_PI * length_ / 4) - (diametr_s_ * diametr_s_ * M_PI * length_ / 4)) / 1000000;
-    ui->le_vol_s->setText(QString::number(vol_s_));
-
-    work_time_ = vol_p_ * 60 / productivity_;
-    ui->le_work_time->setText(QString::number(work_time_));
-
-    press_ = (pressure_ * diametr_p_ * diametr_p_ * M_PI / 40) / 9.8;
-    ui->le_press->setText(QString::number(press_));
-
-    empty_time_ = vol_s_ * 60 / productivity_;
-    ui->le_empty_time->setText(QString::number(empty_time_));
-}

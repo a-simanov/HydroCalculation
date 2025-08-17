@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>855</width>
     <height>600</height>
    </rect>
   </property>
@@ -175,102 +175,14 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Расчет гидроцилиндра&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
-        <item>
-         <widget class="QLabel" name="label_19">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Диаметр&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;поршня,мм&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_21">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Длина&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;хода, мм&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_20">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Объем поршневой&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;части цилиндра, л&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_18">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Диаметр&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;штока, мм&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_17">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Объем штоковой&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;части цилиндра, л&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_16">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Время&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;рабочего хода, сек&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_15">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Усилие&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;штока, кг&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_14">
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Время холостого&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;хода, сек&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLineEdit" name="le_diametr_p"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_length"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_vol_p"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_diametr_s"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_vol_s"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_work_time"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_press"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="le_empty_time"/>
-        </item>
-       </layout>
-      </item>
      </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pb_cylinder_calc">
+      <property name="text">
+       <string>Расчет гидроцилиндра</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -279,7 +191,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>855</width>
      <height>23</height>
     </rect>
    </property>
