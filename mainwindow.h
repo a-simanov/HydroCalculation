@@ -16,11 +16,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-    void calculatePump();
-    void calculateMotor();
-    double getProductivity ();
-    double getPressure ();
+    ~MainWindow();    
 
 private slots:
     void on_le_q_textChanged(const QString &arg1);
@@ -50,6 +46,11 @@ private:
 
     double motor_displacement_;
     double motor_speed_;
-    double motor_torque_;    
+    double motor_torque_;
+
+    void calculatePump();
+    void calculateMotor();
+    double getProductivity ();
+    double getPressure ();
 };
 #endif // MAINWINDOW_H
